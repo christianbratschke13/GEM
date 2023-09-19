@@ -226,6 +226,10 @@ void GEM_u8g2::setMenuPageCurrent(GEMPage& menuPageCurrent) {
   _menuPageCurrent = &menuPageCurrent;
 }
 
+boolean GEM_u8g2::getEditValueMode() {
+  return _editValueMode;
+}
+
 //====================== CONTEXT OPERATIONS
 
 void GEM_u8g2::clearContext() {
