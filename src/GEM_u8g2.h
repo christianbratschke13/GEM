@@ -139,6 +139,9 @@ class GEM_u8g2 {
     boolean readyForKey();                               // Check that menu is waiting for the key press
     void registerKeyPress(byte keyCode);                 // Register the key press and trigger corresponding action
                                                          // Accepts GEM_KEY_NONE, GEM_KEY_UP, GEM_KEY_RIGHT, GEM_KEY_DOWN, GEM_KEY_LEFT, GEM_KEY_CANCEL, GEM_KEY_OK values
+    /* VALUE EDIT */
+    boolean getEditValueMode();
+  
   private:
     U8G2& _u8g2;
     byte _menuPointerType;
